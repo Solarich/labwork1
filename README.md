@@ -2,3 +2,4 @@
 first_commit
 second_commit
 new_z_after_revert
+new_com
