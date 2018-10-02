@@ -1,7 +1,7 @@
 package Servise;
 
 import java.io.Serializable;
-import java.util.*;
+import java.util.Date;
 import java.util.Objects;
 
 public class Message implements Serializable {
