@@ -1,8 +1,8 @@
 package Servise;
 
 import java.io.Serializable;
-import java.util.Date; // test change
-import java.util.Objects;
+import java.util.Date; // test change by TheAleshka
+import java.util.Objects; //test change2 by just4fan
 
 public class Message implements Serializable {
     private static final long serialVersionUID = 1L;
