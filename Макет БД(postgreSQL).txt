@@ -1,0 +1,26 @@
+CREATE TABLE "Users" (
+	"id" serial NOT NULL,
+	"login" VARCHAR(15) NOT NULL UNIQUE,
+	"password" VARCHAR(15) NOT NULL,
+	"Nickname" VARCHAR(15) NOT NULL UNIQUE,
+	CONSTRAINT Users_pk PRIMARY KEY ("id")
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+CREATE TABLE "Messages" (
+	"id" serial NOT NULL,
+	"author" VARCHAR(15) NOT NULL,
+	"text" TEXT NOT NULL,
+	"time" VARCHAR(255) NOT NULL,
+	CONSTRAINT Messages_pk PRIMARY KEY ("id")
+) WITH (
+  OIDS=FALSE
+);
+
+
+
+
+ALTER TABLE "Messages" ADD CONSTRAINT "Messages_fk0" FOREIGN KEY ("author") REFERENCES "Users"("id");
