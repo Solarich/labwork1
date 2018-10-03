@@ -54,9 +54,9 @@ public class MessageProviderImpl implements MessageProvider{
     }
 
     @Override
-    public void sendMessage(Message massage) throws IOException {
+    public void sendMessage(Message message) throws IOException {
         try{
-            objectOutputStream.writeObject(massage);
+            objectOutputStream.writeObject(message);
         }catch (IOException e){
             closeStream();
             throw e;
