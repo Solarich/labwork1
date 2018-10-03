@@ -8,7 +8,7 @@ public class Message implements Serializable {
     private static final long serialVersionUID = 1L;
     private String text;
     private Date departmentTime;
-    private String sender;
+    private String sender; //todo
 
     public Message(String text, Date departmentTime, String sender) {
         this.text = text;
